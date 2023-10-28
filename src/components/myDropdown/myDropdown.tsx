@@ -17,6 +17,8 @@ const MyDropdown = (props:any) => {
     setSelectedOption(view.toLowerCase());
     props.props(view.toLowerCase())
     
+
+    
   };
 
   return (
