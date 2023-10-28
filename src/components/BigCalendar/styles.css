@@ -1,0 +1,46 @@
+.rbc-header {
+    background: transparent;
+    color: white;
+    padding: 3px;
+    font-size: 12px;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 7px;
+  }
+  
+  .rbc-event {
+    padding: 0px !important;
+    border-radius: 0px !important;
+    border: none !important;
+    background-color: transparent !important;
+  }
+  
+  .rbc-background-event {
+    padding: 0px !important;
+    border-radius: 0px !important;
+    border: none !important;
+    background-color: transparent !important;
+  }
+  
+  
+  
+  .rbc-event-label {
+    display: none !important;
+  }
+  
+  .rbc-events-container {
+    width: 100% !important;
+    
+  }
+
+  .rbc-event-content {
+    padding: 1px !important;
+  }
+  
+  .rbc-timeslot-group{
+    min-height: 50px;
+  }
+  
+  .rbc-time-view .rbc-allday-cell{
+    height: 0px;
+  }

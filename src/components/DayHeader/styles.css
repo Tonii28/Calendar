@@ -1,0 +1,32 @@
+.DayHeader{
+  
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.daynumber{
+    margin-top: 5px;
+    font-size:24px;
+    color: black;
+}
+
+.dayNameandDuration{
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+p{
+    margin: 0px;
+}
+.dayName{
+    color: black;
+    margin-bottom: 10px;
+    font-size:18px;
+}
+.duration{
+    color: darkgray;
+    margin-left: 15px;
+}
