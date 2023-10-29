@@ -9,22 +9,22 @@ import MyDropdown from '../myDropdown/myDropdown';
 type CustomToolbarProps = {
   onNavigate: (view: NavigateAction, date?: Date) => void;
   label: string;
-  onView:any
+  onView: (view:string)=>void
 };
 
-const CustomToolbar: React.FC<CustomToolbarProps> = (props:any) => {
+const CustomToolbar: React.FC<CustomToolbarProps> = ({onNavigate, label, onView}:CustomToolbarProps) => {
 
   return (
     <div style={styles.container}>
-      <p style={styles.today}>TODAY</p>
+      <p style={styles.today} onClick={()=>onNavigate("TODAY")}>TODAY</p>
       <div style={styles.right}>
       <div style={styles.weekTotalContainer}>
       <p style={styles.weekTotalLabel}>WEEK TOTAL </p>
       <p style={styles.weekTotal}>41:05:33</p>
       </div>
-      <DateController onNavigate={props.onNavigate} label={props.label}/>
+      <DateController onNavigate={onNavigate} label={label}/>
       <Icon iconName='settings' style={styles.settingsIcon}/>
-      <MyDropdown props={props.onView}/>
+      <MyDropdown props={onView}/>
       </div>
     </div>
   );

@@ -44,3 +44,7 @@
   .rbc-time-view .rbc-allday-cell{
     height: 0px;
   }
+
+  .App{
+    height: 700px;
+  }

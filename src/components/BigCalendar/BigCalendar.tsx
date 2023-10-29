@@ -41,7 +41,7 @@ const components={
      <Calendar
       localizer={localizer}
       events={EVENTS}
-     
+      showAllEvents={true}
       defaultDate={new Date(2023, 9, 1)}
       step={30}
       timeslots={2}

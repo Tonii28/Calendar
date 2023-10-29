@@ -54,13 +54,13 @@ const giveMeTypeColor=(type: any)=>{
 
 return (
   <div
-  className="dobar" style={{backgroundColor:(giveMeEventColor(event.props.data.type))}}
+  className="container" style={{backgroundColor:(giveMeEventColor(event.props.data.type))}}
 >
-  <div className="pomocni">
- <p className="dobartekst" >{event.props.data.description} (id: {event.props.data.id})</p>
- <p className="dobartekst1" style={{color: (giveMeTypeColor(event.props.data.type))}}>{event.props.data.type}</p>
+  <div className="descriptionAndType">
+ <p className="description" >{event.props.data.description} (id: {event.props.data.id})</p>
+ <p className="typeOfEvent" style={{color: (giveMeTypeColor(event.props.data.type))}}>{event.props.data.type}</p>
  </div>
- <p className="dobartekst2">{giveMeDuration(event.props.start, event.props.end)}</p>
+ <p className="durationn">{giveMeDuration(event.props.start, event.props.end)}</p>
 </div>
   );
 }
